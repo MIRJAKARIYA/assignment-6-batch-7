@@ -56,14 +56,18 @@ const showCards = (data,datesort,show) => {
   });
 };
 
+
+//modal details fetch
 const showSingleDetailsFetch = (id) => {
   fetch(`https://openapi.programming-hero.com/api/ai/tool/${id}`)
     .then((res) => res.json())
     .then((data) => showModalData(data.data));
 };
 
+
+//modal data showing
 const showModalData = (data) => {
-  console.log(data)
+
  
 
   const featuresUl = document.createElement("ul")
@@ -155,6 +159,8 @@ const showModalData = (data) => {
   
   `;
 };
+
+
 let isSorted = false;
 let isShow = false
 //dateSortButton
