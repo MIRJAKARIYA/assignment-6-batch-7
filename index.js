@@ -13,7 +13,7 @@ const showCards = (data,datesort,show) => {
   }
 
   if(!show){
-    data = data.slice(0,10)
+    data = data.slice(0,6)
     document.getElementById("show-all-btn").classList.remove("hidden")
   }
   else{
